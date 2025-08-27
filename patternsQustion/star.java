@@ -1,6 +1,6 @@
 package patternsQustion;
 
-public class start {
+public class star {
 
 // * 
 // * *     

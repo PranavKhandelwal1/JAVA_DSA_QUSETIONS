@@ -1,3 +1,4 @@
+package cycleSort;
 import java.util.Arrays;
 public class cycleSortAlgo {
 
@@ -17,7 +18,7 @@ public class cycleSortAlgo {
     }
     
     public static void main(String[] args) {
-        int [] arr = {3,2,1,5,4};
+        int [] arr = {3,2,1,5,43,2};
         cycleSortAlgorithem(arr);
         System.out.println("Sorted Array: " + Arrays.toString(arr)); // Output: [1, 2, 3, 4, 5]
     }

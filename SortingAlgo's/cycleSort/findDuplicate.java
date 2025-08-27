@@ -1,3 +1,4 @@
+package cycleSort;
 public class findDuplicate {
     public static int findDuplicates(int[] nums) {
     

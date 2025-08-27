@@ -1,3 +1,4 @@
+package Basic;
 class Methods {
 
     static boolean isPrime(int n) {

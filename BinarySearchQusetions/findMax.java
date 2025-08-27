@@ -1,5 +1,5 @@
 public class findMax {
-    public static int findMaxNumberInRotatedArray(int[] arr) {
+    public static int findPivotNumberInRotatedArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
         if(arr[start] < arr[end]) {
@@ -18,7 +18,7 @@ public class findMax {
     return arr[start];
     }
     public static void main(String[] args) {
-         int[] arr = {7, 8, 9, 10, 2, 3, 4, 5};
-        System.out.println(findMaxNumberInRotatedArray(arr));
+         int[] arr = {1,1,1,1,1,1,1,1,1};
+        System.out.println(findPivotNumberInRotatedArray(arr));
     }
 }

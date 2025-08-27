@@ -1,3 +1,5 @@
+package cycleSort;
+
 public class containDuplicate {
     
     public static boolean containsDuplicate(int[] arr) {

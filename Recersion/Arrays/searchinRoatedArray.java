@@ -1,4 +1,4 @@
-package Recersion;
+package Recersion.Arrays;
 
 public class searchinRoatedArray {
     static int search(int arr[],  int s, int key, int e){

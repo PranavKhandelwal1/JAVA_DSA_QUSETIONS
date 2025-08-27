@@ -1,4 +1,4 @@
-package Recersion;
+package Recersion.Arrays;
 import java.util.ArrayList;
 
 public class linearSearchWithDuplicate {

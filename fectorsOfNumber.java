@@ -43,7 +43,7 @@ public class fectorsOfNumber {
     }
     public static void main(String[] args) {
         int n = 41;
-        int p = 11;
+
         OptiShorted(n);
     }
 }

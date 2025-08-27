@@ -1,7 +1,5 @@
 package BitWishOprators;
 
-import java.util.Arrays;
-
 // https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/description/
 public class XORSumofAllPairsBitwiseAND {
 

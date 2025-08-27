@@ -1,4 +1,4 @@
-package Recersion;
+package Recersion.sortingAlgo;
 
 public class quickSort {
     

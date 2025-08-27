@@ -1,4 +1,4 @@
-package Recersion;
+package Recersion.Arrays;
 
 public class linearSearch {
     

@@ -1,4 +1,4 @@
-package Recersion;
+package Recersion.sortingAlgo;
 
 public class bubbleSort {
     static void bubble(int[] arr, int r,int c){

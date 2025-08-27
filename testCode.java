@@ -1,8 +1,3 @@
-import java.util.Arrays;
-
-import BitWishOprators.reset_ith_bit;
-import patternsQustion.star;
-
 public class testCode {
     public static void  selectionSort(int[] arr) {
         int n   =   arr.length;

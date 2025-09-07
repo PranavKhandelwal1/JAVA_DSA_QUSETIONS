@@ -1,4 +1,4 @@
-package Recersion;
+package Recersion.Basic;
 
 public class internalWorking {
     public static void main(String[] args) {

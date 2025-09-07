@@ -1,3 +1,4 @@
+package Basic;
 public class sqrtNewtonraphson {
     
     public static double sqrt(double n, double tolerence){

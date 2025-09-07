@@ -1,8 +1,8 @@
-package Recersion;
+package Recersion.Basic;
 
 public class febonachi {
     
-
+ 
     public static int Febo(int n){
         if(n<2){
             return n;

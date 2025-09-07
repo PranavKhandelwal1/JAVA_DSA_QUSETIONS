@@ -1,3 +1,4 @@
+package Basic;
 public class BinarySearchSqrt {
     
     public static double sqrt(int n, int d){

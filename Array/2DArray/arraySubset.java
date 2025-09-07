@@ -10,7 +10,7 @@ public class arraySubset {
         for(int i =0 ; i < arr.length; i++){
             int n = outer.size();
             for(int j=0; j<n ;j++){
-                System.out.println(outer);
+                // System.out.println(outer);
                 List<Integer> inner = new ArrayList<>(outer.get(j)); // copying outer ls in inner ls by creating new.
                 // System.out.println("Inner "+inner);
                 inner.add(arr[i]);//adding element in inner ls
@@ -23,7 +23,7 @@ public class arraySubset {
     return outer;
     }
     public static void main(String[] args) {
-        int[] arr = {1,2,2};
+        int[] arr = {1,2,3};
         List<List<Integer>> temp = subset(arr);
         System.out.println("Subsets Of Array are: "+temp.toString());
     }

@@ -88,7 +88,7 @@ public class margeSort {
         int[] arr1 = {9,8,7,6,5,4,3,2,1};
         mergeIndex(arr, 0, arr.length);
         System.out.println(Arrays.toString(arr));
-        merge(arr1);
-        System.out.println(Arrays.toString(arr1));
+        // merge(arr1);
+        // System.out.println(Arrays.toString(arr1));
     }
 }

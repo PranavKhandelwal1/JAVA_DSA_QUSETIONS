@@ -53,5 +53,7 @@ public class slidingWindow {
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
         int windowSize = 3;
+        slidingWindowAlgo2(arr,3);
+        System.out.println();
     }
 }

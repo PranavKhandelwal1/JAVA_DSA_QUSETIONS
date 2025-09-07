@@ -1,3 +1,4 @@
+package Basic;
 import java.util.ArrayList;
 
 public class fectorsOfNumber {
@@ -20,7 +21,6 @@ public class fectorsOfNumber {
                 } else {
                     System.out.print(i+" ");
                 }
-                
             }
         }
     }
@@ -34,7 +34,6 @@ public class fectorsOfNumber {
                 } else {
                     System.out.print(i+" ");
                 }
-                
             }
         }
         for(int i=list.size()-1 ; i>=0 ; i--){
@@ -42,8 +41,8 @@ public class fectorsOfNumber {
         }
     }
     public static void main(String[] args) {
-        int n = 41;
+        int n = 20;
 
-        OptiShorted(n);
+        Optimis(n);
     }
 }

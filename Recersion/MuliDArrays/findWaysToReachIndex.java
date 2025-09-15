@@ -1,7 +1,6 @@
 package Recersion.MuliDArrays;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class findWaysToReachIndex {
     //count ways

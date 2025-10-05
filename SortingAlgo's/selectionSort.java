@@ -1,35 +1,36 @@
 import java.util.Arrays;
-
 public class selectionSort {
-    
-    public static void selectionSortAlgo(int[] arr){
-        int n = arr.length;
-        for(int i = 0; i < n - 1; i++){
-            int last = n - i - 1;
-            int maxIndex = getMaxIndex(arr, 0, last);
-            swap(arr, maxIndex, last);
-        }
-    }
-    private static void swap(int[] arr,int first, int second){
-
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp; 
-    }
-    // Method to find the index of the maximum element in arr between start and end (inclusive)
-    private static int getMaxIndex(int[] arr, int start, int end) {
-        int maxIndex = start;
-        for (int i = start + 1; i <= end; i++) {
-            if (arr[i] > arr[maxIndex]) {
-                maxIndex = i;
+    public static int[] selection_Sort(int[] arr){
+        for(int i=0; i<arr.length; i++){
+            int max = 0;
+            for(int j=1; j<arr.length-i; j++){
+                if(arr[j]>arr[max]){
+                    max = j;
+                }
             }
+            int temp = arr[arr.length-1-i];
+            arr[arr.length-1-i] = arr[max];
+            arr[max] = temp;
         }
-        return maxIndex;
+    return arr;
     }
-
+    public static int[] selection_Sort2(int[] arr,int i, int j, int max){
+        if(i == arr.length){
+            return arr;
+        }
+        if(j<arr.length-i){
+            if(arr[j]>arr[max]){
+                max = j;
+            }
+            return selection_Sort2(arr, i, j+1, max);
+        }
+        int temp = arr[arr.length-1-i];
+        arr[arr.length-1-i] = arr[max]; 
+        arr[max] = temp;
+        return selection_Sort2(arr, i+1, 0, 0);
+    }
     public static void main(String[] args) {
-        int[] arr = {5, 4, 3, 2, 1};
-        selectionSortAlgo(arr);
-        System.out.println("Sorted array: " + Arrays.toString(arr)); // Output: [1, 2, 3, 4, 5]
+        int[] arr = {4,3,2,1};
+        System.out.println(Arrays.toString(selection_Sort2(arr,0,0,0)));
     }
 }

@@ -27,25 +27,11 @@ public class insertionSort {
         if(i>=j) return insertionSortAlgo(arr, 0, j+1);
         return insertionSortAlgo(arr, i+1,j);
     }
-    static int[] bbl(int[] arr, int i,int j){
-        if(j==0) return arr;
-        if(i<j){
-            if(arr[i] > arr[i+1]){
-                int temp = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = temp;
-            }
-            return bbl(arr, i+1, j);
-        }else{
-            return bbl(arr, 0, j-1);
-        }
-    }
+    
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,1};
         int[] arr1 = {1,2,3,4,5};
-        System.out.println(Arrays.toString(bbl(arr, 0, arr.length-1)));
-
-        // System.out.println(insertionSortAlgo(arr, 1));
-        // System.out.println(arr.toString());
+        System.out.println(Arrays.toString(insertionSortAlgo(arr1, 0,0)));
+        // sort(arr);
     }
 }

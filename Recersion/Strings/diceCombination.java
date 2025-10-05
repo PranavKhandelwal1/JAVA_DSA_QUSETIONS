@@ -50,7 +50,10 @@ public class diceCombination {
         sumPairs(n, a + 1);  // recursive call for next a
     }
     public static void main(String[] args) {
-        sumPairs(4,0);
-        System.out.println();
+        int n = 4;
+        // dice("", n);
+        // System.out.println(diceList("", n));
+        // twoDice("", n);
+        sumPairs(1, n); 
     }
 }

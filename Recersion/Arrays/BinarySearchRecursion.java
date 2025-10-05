@@ -2,7 +2,7 @@ package Recersion.Arrays;
 
 public class BinarySearchRecursion {
 
-    static int BinarySearch(int arr[], int t, int s, int e){
+    public static int BinarySearch(int arr[], int t, int s, int e){
 
         int mid = s + (e-s)/2;
         if(s>e){

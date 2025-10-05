@@ -17,6 +17,20 @@ public class bubbleSort {
             bubble(arr,r-1,0);
         }
     }  
+    public static int[] bubble2(int[] arr, int i, int j) {
+    if (i == arr.length-1)
+      return arr;
+
+    if (j < arr.length - i) {
+      if (arr[j] < arr[j - 1]) {
+        int temp = arr[j];
+        arr[j] = arr[j - 1];
+        arr[j - 1] = temp;
+      }
+      return bubble2(arr, i, j + 1);
+    }
+    return bubble2(arr, i + 1, 1);
+  }
     public static void main(String[] args) {
         int[] arr={5,4,3,2,1};
         bubble(arr,arr.length-1,0);

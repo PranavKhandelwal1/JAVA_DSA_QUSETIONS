@@ -2,8 +2,6 @@ package Recersion.Strings;
 
 import java.util.ArrayList;
 
-import javax.print.DocFlavor.STRING;
-
 public class permutation {
     //Method 1
     public static void permutationFind(String p, String up){
@@ -16,6 +14,7 @@ public class permutation {
             permutationFind(p.substring(0, i) + ch + p.substring(i, p.length()), up.substring(1));
         }
     }
+    //permutation with count
     public static int permutationCountFind(String p, String up){
         if(up.isEmpty()){
             return 1;
@@ -52,7 +51,8 @@ public class permutation {
         }
     }
     public static void main(String[] args) {
-        method2("abc","");
+        // method2("abc","");
         permutationFind("", "abc");
+        System.out.println(permutationCountFind("", "abc"));
     }
 }

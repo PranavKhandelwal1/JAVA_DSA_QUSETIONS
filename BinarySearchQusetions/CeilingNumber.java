@@ -63,11 +63,11 @@ public class CeilingNumber {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arr = {1, 2, 3, 4, 6, 7, 8, 9, 10};
         int target = 5;
-        int ceiling = ceilingNumber(arr, target);
+        // int ceiling = ceilingNumber(arr, target);
         int floor = floorNumber(arr, target);
-        System.out.println("Ceiling of " + target + " is: " + ceiling); // Output: Ceiling of 5 is: 5
+        // System.out.println("Ceiling of " + target + " is: " + ceiling); // Output: Ceiling of 5 is: 5
         System.out.println("Floor of " + target + " is: " + floor); // Output: Floor of 5 is: 5
         
     }

@@ -6,7 +6,7 @@ public class BinarySearch {
             int mid = start + (end - start) / 2; // To avoid overflow
             
             if(arr[mid] == target) {
-                return arr[mid]; // Target found
+                return mid; // Target found
             } else if(arr[mid] < target) {
                 start = mid + 1; // Search in the right half
             } else {

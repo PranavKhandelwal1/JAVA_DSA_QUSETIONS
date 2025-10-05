@@ -11,7 +11,7 @@ public class nQueen {
     }
 
     private static List<List<String>> helper(boolean[][] arr, int row, int col) {
-        int n = arr.length;
+        int n = arr[0].length;
         List<List<String>> res = new ArrayList<>();
         // if all rows are filled, save solution
         if (row == n) {

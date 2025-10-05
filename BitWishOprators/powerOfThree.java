@@ -13,7 +13,7 @@ public class powerOfThree {
         return ans;
     }
     public static void main(String[] args) {
-        int b=3,p=5;
+        int b=2,p=5;
         System.out.println(find(b, p));
     }
 }

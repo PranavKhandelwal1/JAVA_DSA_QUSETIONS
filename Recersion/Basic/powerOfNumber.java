@@ -18,6 +18,18 @@ public class powerOfNumber {
             return x * half *half;
         }
     }
+    //Recursive 
+    static int pow(int b, int p, int ans) {
+        if (p == 0)
+            return ans;
+        if ((p & 1) == 1) {
+            ans = ans * b;
+        }
+        b = b * b;
+        p = p >> 1;
+        return pow(b, p, ans);
+    }
+
     public static void main(String[] args) {
         System.out.println(myPow(2, 2147483646));
         System.out.println(myPow(2, -2147483647));

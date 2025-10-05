@@ -68,6 +68,9 @@ public class findWaysToReachIndex {
         int[][]arr = {{1,2,3},
                       {4,5,6},
                       {7,8,9}};
-        System.out.println(printPathDignonal(arr, "", 0, 0));
+        System.out.println("Count of total paths: "+find(arr, 0, 0));
+        printPath(arr, "", 0, 0);
+        System.out.println("Print path in List: "+printPathList(arr, "", 0, 0));
+        System.out.println("Print path Daignonal in List: "+printPathDignonal(arr, "", 0, 0));
     }
 }

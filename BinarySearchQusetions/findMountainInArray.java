@@ -58,7 +58,7 @@ public class findMountainInArray {
             }
         }
         return -1;
-    }
+    }    
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,3,1};
         System.out.println("Index of target in mountain array: " + findInMountainArray(3, arr)); // Output: Index of target in mountain array: 2

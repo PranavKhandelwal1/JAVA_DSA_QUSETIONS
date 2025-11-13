@@ -29,11 +29,8 @@ public class moveZero {
     //optimized approach O(n)
     public static void moveZeroes2(int[] nums) {
         int point = 0;
-        for(int i = 0; i < nums.length; i++) {
-            if(nums[i] != 0) {
-                nums[point] = nums[i];
-                point++;
-            }
+        for(int i : nums){
+            if(i != 0) nums[point++] = i;
         }
         while(point < nums.length) {
             nums[point] = 0;

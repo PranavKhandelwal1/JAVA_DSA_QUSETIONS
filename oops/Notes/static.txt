@@ -52,7 +52,7 @@ you can declare a static block that gets executed exactly once, when the class i
     }
 }
 
-As soon as the UseStatic class is loaded, all of the static statements are run. First, a is set to 3,
+As soon as the Use Static class is loaded, all of the static statements are run. First, a is set to 3,
 then the static block executes, which prints a message and then initializes b to a*4 or 12. Then main( ) is called,
 which calls meth( ), passing 42 to x. The three println( ) statements refer to the two static variables a and b,
 as well as to the local variable x.

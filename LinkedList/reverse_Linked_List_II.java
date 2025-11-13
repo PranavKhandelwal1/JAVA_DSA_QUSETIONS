@@ -81,31 +81,36 @@ class LList {
     }
 
     public Node reverseBetween(Node head, int left, int right) {
-        if (head == null || left == right)
+        if (left == right || head == null)
             return head;
         Node dummy = new Node();
         dummy.next = head;
-        // Step 1: Find leftPreviousNode (node before left)
-        Node leftPreviousNode = findLeftPreviousNode(dummy, left);
-        Node leftNode = leftPreviousNode.next;
 
-        // Step 2: Find rightNode
-        Node rightNode = findRightNode(dummy, right);
+        // Find prevNodeLeft
+        Node prevNodeLeft = dummy;
+        for (int i = 1; i < left; i++) {
+            prevNodeLeft = prevNodeLeft.next;
+        }
 
-        // Step 3: Save the node after right
+        Node leftNode = prevNodeLeft.next;
+
+        // Find rightNode
+        Node rightNode = leftNode;
+        for (int i = 0; i < right - left; i++) {
+            rightNode = rightNode.next;
+        }
+
         Node rightNextNode = rightNode.next;
 
-        // Step 4: Reverse [leftNode ... rightNode]
-        Node reversedHead = reverse(leftNode, rightNode);
+        Node newNextLeft = reverseList(leftNode, rightNode);
 
-        // Step 5: Reconnect
-        leftPreviousNode.next = reversedHead;
-        leftNode.next = rightNextNode;
+        prevNodeLeft.next = newNextLeft;
+        leftNode.next = rightNextNode; //now left node moved to the right
 
-        return dummy.next;
+        return head;
     }
 
-    private Node reverse(Node head, Node tail) {
+    private Node reverseList(Node head, Node tail) {
         Node currNode = head;
         Node prev = null;
         Node stop = tail.next; // stop after tail
@@ -118,20 +123,20 @@ class LList {
         return prev;
     }
 
-    private Node findLeftPreviousNode(Node head, int left) {
-        Node temp = head;
-        for (int i = 1; i < left; i++) {
-            temp = temp.next;
-        }
+    // private Node findLeftPreviousNode(Node head, int left) {
+    //     Node temp = head;
+    //     for (int i = 1; i < left; i++) {
+    //         temp = temp.next;
+    //     }
 
-        return temp;
-    }
+    //     return temp;
+    // }
 
-    private Node findRightNode(Node head, int right) {
-        Node temp = head;
-        for (int i = 0; i < right; i++) {
-            temp = temp.next;
-        }
-        return temp;
-    }
+    // private Node findRightNode(Node head, int right) {
+    //     Node temp = head;
+    //     for (int i = 0; i < right; i++) {
+    //         temp = temp.next;
+    //     }
+    //     return temp;
+    // }
 }

@@ -12,9 +12,9 @@ public class targetSum {
             for(int i=0;i<nums.length;i++){
                 int sumIN=0;
                 int neg = (0 - nums[i]);
-                for(int j=0;j<nums.length;j++){    
+                for(int j=0;j<nums.length;j++){
                     if(i==j){
-                        continue;   
+                        continue;
                     }
                     sumIN += nums[j];
                 }

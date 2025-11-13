@@ -1,3 +1,15 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        ".",
+        "Array\\2DArray",
+        "ArrayList",
+        "BinarySearchQusetions",
+        "SortingAlgo's",
+        "Stacks and Queues\\stacks"
+    ],
+    "java.project.referencedLibraries": [],
+    "cSpell.words": [
+        "hackerrank"
+    ]
 }

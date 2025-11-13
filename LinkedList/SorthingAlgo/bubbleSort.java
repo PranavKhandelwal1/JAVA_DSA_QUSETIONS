@@ -12,7 +12,7 @@ public class bubbleSort {
         ll.printList();
         // bubble Sort
         System.out.println("\n" + "Sorted List: ");
-        ll.bubbleSortRecuesion();
+        ll.head = ll.bubbleSort(ll.head);
         ll.printList();
 
     }
@@ -78,6 +78,7 @@ class Linked_List {
         return head;
     }
 
+
     // o(n), O(n.n)
     public void bubbleSortOptimized(Node head) {
         if (head == null)
@@ -86,7 +87,8 @@ class Linked_List {
         boolean swapped;
         Node current;
         Node last = null;
-
+        // 1 2 3 4 5
+        // 1 2 4 3 5
         do {
             swapped = false;
             current = head;
@@ -104,6 +106,7 @@ class Linked_List {
             last = current; // after each pass, last node is in correct position
         } while (swapped);
     }
+
     // Recursive bubble sort driver
     public void bubbleSortRecuesion() {
         if (bubblePass(head)) {
@@ -111,6 +114,7 @@ class Linked_List {
             bubbleSortRecuesion();
         }
     }
+
     private boolean bubblePass(Node node) {
         if (node == null || node.next == null)
             return false;
@@ -128,8 +132,6 @@ class Linked_List {
         boolean nextSwapped = bubblePass(node.next);
         return swapped || nextSwapped;
     }
-
-    
 
     private int getLength(Node head) {
         int length = 0;
